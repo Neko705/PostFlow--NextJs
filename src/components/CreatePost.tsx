@@ -69,21 +69,7 @@ const handleSubmit = async () => {
               }}
             />
           </div>
-          )} */}
-
-          {/* handel image uplodes */}
-          {(showImageUpload || imageUrl) &&(
-            <div className="border rounded-lg p-4">
-            <ImageUpload
-              endpoint="postImage"
-              value={imageUrl}
-              onChange={(url) => {
-                setImageUrl(url);
-                if (!url) setShowImageUpload(false);
-              }}
-            />
-          </div>
-          )} 
+          )} */} 
 
           <div className="flex items-center justify-between border-t pt-4">
             {/* <div className="flex space-x-2">
@@ -98,21 +84,7 @@ const handleSubmit = async () => {
                 <ImageIcon className="size-4 mr-2" />
                 Photo
               </Button>
-            </div> */}
-
-             <div className="flex space-x-2">
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                className="text-muted-foreground hover:text-primary"
-                onClick={() => setShowImageUpload(!showImageUpload)}
-                disabled={isPosting}
-              >
-                <ImageIcon className="size-4 mr-2" />
-                Photo
-              </Button>
-            </div> 
+            </div> */} 
 
             <Button
               className="flex items-center"
